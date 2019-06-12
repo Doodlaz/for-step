@@ -1,0 +1,125 @@
+//----------------------
+// flex properties
+//----------------------
+
+// align
+%l_align-items--center {
+	align-items: center;
+}
+
+%l_align-self--stretch {
+	align-self: stretch;
+}
+
+// justify content
+%l_justify-content--center {
+	justify-content: center;
+}
+
+// justify content
+%l_justify-content--flex-end {
+	justify-content: flex-end;
+}
+
+%l_justify-content--space-around {
+	justify-content: space-around;
+}
+
+%l_justify-content--space-between {
+	justify-content: space-between;
+}
+
+// wrap
+%l_flex-wrap--wrap {
+	flex-wrap: wrap;
+}
+
+// direction
+%l_flex-direction--column {
+	flex-direction: column;
+}
+
+%l_flex--center{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+%l_flex--justify-center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+%l_flex--column-end{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+%l_flex--align-flex-start{
+	display: flex;
+	align-items: flex-start;
+}
+%l_flex--align-center{
+	display: flex;
+	align-items: center;
+}
+
+// opacity 100%
+%opacity-1{
+	opacity: 1;
+}
+
+// ALL
+%l_show-block { display: block; }
+%l_show-inline-block { display: inline-block; }
+%l_show-flex { display: flex; }
+%l_hide { display: none; }
+
+// MOBILE ONLY
+@media (max-width: 767px) {
+	%l_hide--xs { display: none; }
+	%l_show-block--xs { display: block; }
+	%l_show-inline--xs { display: inline; }
+	%l_show-inline-block--xs { display: inline-block; }
+	%l_show-flex--xs { display: flex; }
+}
+
+// TABLET +
+@media (min-width: 768px) {
+	%l_hide--md { display: none; }
+	%l_show-block--md { display: block; }
+	%l_show-inline--md { display: inline; }
+	%l_show-inline-block--md { display: inline-block; }
+	%l_show-flex--md { display: flex; }
+}
+
+// DESKTOP
+@include mq($lg) {
+	%l_hide--lg { display: none; }
+	%l_show-block--lg { display: block; }
+	%l_show-inline-block--lg { display: inline-block; }
+	%l_show-flex--lg { display: flex; }
+}
+
+// VANITY
+@include mq($xl) {
+	%l_hide--xl { display: none; }
+	%l_show-block--xl { display: block; }
+	%l_show-inline-block--xl { display: inline-block; }
+	%l_show-flex--xl { display: flex; }
+}
+
+@media (min-width: 1024px) {
+	.l_flex--align-center {
+		display: flex;
+		align-items: center;
+	}
+	.l_justify-content--flex-end {
+		justify-content: flex-end;
+	}
+	.l_flex--justify-center{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}

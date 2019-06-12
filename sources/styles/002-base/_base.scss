@@ -1,0 +1,26 @@
+//-----------------------------------------------------------
+// BASE
+//-----------------------------------------------------------
+body {
+	background: white;
+	font-family: $Helvetica;
+	color: $primary;
+	font-weight: $weight-regular;
+	overflow-x: hidden;
+}
+
+svg[width="0"][height="0"] {
+	position: absolute;
+}
+
+.global-wrap{
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+main{
+	flex: 1 0 auto;
+}
+footer{
+	flex: 0 0 auto;
+}

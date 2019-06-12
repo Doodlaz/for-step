@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="115" height="15" viewBox="0 0 115 15">
+  <g fill="none" fill-rule="evenodd" transform="translate(0 -1)">
+    <path fill="#6D7D9A" d="M7.457,1.0004 L0,15.8324 L2.76,15.8324 L3.873,13.5664 L11.536,13.5664 L12.608,15.8324 L15.409,15.8324 L7.911,1.0004 L7.457,1.0004 Z M7.622,5.5314 L7.787,5.5314 L10.589,11.5894 L4.82,11.5894 L7.622,5.5314 Z"/>
+    <g transform="translate(0 .832)">
+      <g transform="translate(24)">
+        <mask id="artkai_logo-b" fill="#fff">
+          <polygon id="artkai_logo-a" points="13.41 .168 .391 .168 .391 15 13.41 15"/>
+        </mask>
+        <path fill="#6D7D9A" d="M6.7361,2.351 L2.8221,2.351 L2.8221,8.202 L6.9011,8.202 C8.9611,8.202 10.3201,7.295 10.3201,5.318 C10.2791,3.34 8.9201,2.351 6.7361,2.351 L6.7361,2.351 Z M0.3911,0.167 L6.8181,0.167 C10.5681,0.167 12.8341,1.981 12.8341,5.194 C12.8341,7.501 11.6391,9.067 9.7431,9.809 L9.7431,9.973 L13.4101,14.711 L13.4101,15 L10.6911,15 L7.0661,10.303 L2.8221,10.303 L2.8221,15 L0.3911,15 L0.3911,0.167 Z" mask="url(#artkai_logo-b)"/>
+      </g>
+      <g transform="translate(45)">
+        <mask id="artkai_logo-d" fill="#fff">
+          <polygon id="artkai_logo-c" points=".404 15 12.847 15 12.847 .168 .404 .168"/>
+        </mask>
+        <polygon fill="#6D7D9A" points=".404 .167 12.847 .167 12.847 2.351 7.862 2.351 7.862 15 5.43 15 5.43 2.351 .445 2.351 .445 .167" mask="url(#artkai_logo-d)"/>
+      </g>
+      <g transform="translate(66)">
+        <mask id="artkai_logo-f" fill="#fff">
+          <polygon id="artkai_logo-e" points=".992 15 13.848 15 13.848 .168 .992 .168"/>
+        </mask>
+        <polygon fill="#6D7D9A" points="3.424 7.707 10.881 .168 13.848 .168 13.848 .457 7.997 6.431 13.848 14.671 13.848 15.001 10.963 15.001 6.226 8.201 3.424 11.086 3.424 15.001 .992 15.001 .992 .168 3.424 .168" mask="url(#artkai_logo-f)"/>
+      </g>
+      <g transform="translate(88)">
+        <mask id="artkai_logo-h" fill="#fff">
+          <polygon id="artkai_logo-g" points=".005 15 15.455 15 15.455 .168 .005 .168"/>
+        </mask>
+        <path fill="#6D7D9A" d="M7.8333,4.6997 L7.6693,4.6997 L4.8673,10.7567 L10.6353,10.7567 L7.8333,4.6997 Z M7.5043,0.1677 L7.9573,0.1677 L15.4553,15.0007 L12.6533,15.0007 L11.5413,12.7337 L3.8373,12.7337 L2.7663,15.0007 L0.0053,15.0007 L7.5043,0.1677 Z" mask="url(#artkai_logo-h)"/>
+      </g>
+      <mask id="artkai_logo-j" fill="#fff">
+        <polygon id="artkai_logo-i" points="0 15 114.868 15 114.868 .168 0 .168"/>
+      </mask>
+      <polygon fill="#6D7D9A" points="112.437 15 114.868 15 114.868 .167 112.437 .167" mask="url(#artkai_logo-j)"/>
+    </g>
+  </g>
+</svg>

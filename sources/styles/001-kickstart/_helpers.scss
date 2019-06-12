@@ -1,0 +1,174 @@
+//-----------------------------------------------------------
+// RESET
+//-----------------------------------------------------------
+
+@-webkit-viewport{width:device-width}
+@-moz-viewport{width:device-width}
+@-ms-viewport{width:device-width}
+@-o-viewport{width:device-width}
+@viewport{width:device-width}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, caption,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	color: inherit;
+	vertical-align: baseline;
+}
+
+//smooth those fonts
+body, input, button, select, textarea {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	-webkit-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+	outline: none;
+}
+button{
+	background: transparent;
+	outline: none;
+}
+
+// HTML5 display-role reset for older browsers
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	@extend %l_show-block;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+p {
+	margin: 1em auto;
+	&:first-child { margin-top: 0; }
+	&:last-child { margin-bottom: 0; }
+}
+
+b,strong {
+	font-weight: bold;
+}
+
+i,em {
+	font-style: italic;
+}
+
+input,
+select,
+textarea,
+button {
+	-webkit-appearance: none;
+	border-radius: 0;
+}
+
+select { -webkit-appearance: menulist-button; }
+
+textarea {
+	resize: none;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+img,
+picture { @extend %l_show-block; height: auto; }
+
+button,
+input[type="submit"],
+textarea {
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+}
+
+iframe {
+	@extend %l_show-block;
+	max-width: 100%;
+}
+
+html,
+body { height: 100%; }
+
+//-----------------------------------------------------------
+// HELPERS
+//-----------------------------------------------------------
+
+.clear:before,
+.clear:after {
+    content: " ";
+    display: table;
+	clear: both;
+}
+
+.hidden {
+	@extend %l_hide;
+}
+
+.screen-reader {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+.svg-sprite {
+	&,
+	svg {
+		height: 0;
+		width: 0;
+		position: absolute;
+		overflow: hidden;
+	}
+}
+
+.long-links {
+	/* These are technically the same, but use both */
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+
+	-ms-word-break: break-all;
+	/* This is the dangerous one in WebKit, as it breaks things wherever */
+	word-break: break-all;
+	/* Instead use this non-standard one: */
+	word-break: break-word;
+
+	/* Adds a hyphen where the word breaks, if supported (No Blink) */
+	-ms-hyphens: auto;
+	-moz-hyphens: auto;
+	-webkit-hyphens: auto;
+	hyphens: auto;
+}

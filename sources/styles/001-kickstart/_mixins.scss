@@ -1,0 +1,70 @@
+//-----------------------------------------------------------
+// MIXINS
+//-----------------------------------------------------------
+
+//-------------------------------------------------
+// Font size
+//
+// Generate font-size definitions in REM for hip
+// browsers, and equivalent PX for old ones
+//
+// @param size (px)
+// @return size px, size rem
+@mixin font-size($sizeValue: 16) {
+	font-size: ($sizeValue) + px;
+	font-size: ($sizeValue / 16) + rem;
+}
+
+
+//-------------------------------------------------
+// Line Height
+//
+// @param size (px)
+@mixin line-height($lineValue, $fontValue: 16) {
+	line-height: $lineValue / $fontValue;
+}
+
+//-------------------------------------------------
+// Media Queries
+//
+// Generates a media query based on the options
+//
+// @param size (px)
+// @param type (min, max, min-device, or max-device)
+// @param orientation (width or heigh)
+// @return size rem
+@mixin mq($size, $type: min, $orientation: width) {
+    @media (#{$type}-#{$orientation}: $size / 16 + em) {
+        @content;
+    }
+}
+
+
+@mixin mqd($sizeFirst, $sizeSecond, $typeFirst: max, $typeSecond: min) {
+	@media (#{$typeFirst}-width: $sizeFirst / 16 + em) and (#{$typeSecond}-width: $sizeSecond / 16 + em) {
+		@content;
+	}
+}
+
+//-------------------------------------------------
+// Background Settings
+//
+// Generates common background settings
+// so I don't have to repeat myself 20 million times
+
+@mixin background-settings {
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+
+//-------------------------------------------------
+// Color fetching
+//
+// makes it easier to fetch color values
+// without nested map-gets all over our CSS
+
+@function color($color, $tone: 400) {
+	@return map-get(map-get($colors, unquote($color)), $tone);
+}

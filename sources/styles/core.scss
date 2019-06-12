@@ -1,0 +1,68 @@
+//-----------------------------------------------------------
+// KICKSTART (USED ON EVERY PROJECT)
+//-----------------------------------------------------------
+@import "001-kickstart/helpers";              // reset + standard helper classes
+@import "001-kickstart/mixins";               // common mixins
+
+//-----------------------------------------------------------
+// LIBS
+//-----------------------------------------------------------
+
+@import "008-libs/_slick";                       // styles that need to be refactored, or that are hacky because of browser compatibility etc.
+@import "008-libs/custom-scrollbar";             //scrollbar
+@import "008-libs/easy-autocomplete.css";        //autocomplete
+
+//-----------------------------------------------------------
+// PROJECT BASE
+//-----------------------------------------------------------
+
+@import "002-base/fonts";                     // @font-face declarations
+@import "002-base/variables";                 // color, font, breakpoint variables, etc
+@import "002-base/base";                      // base styles for project
+@import "002-base/layout.scss";                    // useful layout styles
+@import "002-base/typography";                // type styles for project
+@import "002-base/utilities";                 // misc reusables - small chunks as opposed to entire sections like modules
+@import "002-base/grid";                      // grid
+
+//-----------------------------------------------------------
+// PATTERNS
+//-----------------------------------------------------------
+
+@import "003-patterns/sprite";                      // svg sprite to css
+@import "003-patterns/buttons";                    // button styles for project
+@import "003-patterns/forms";                      // form styles
+@import "003-patterns/icons";                 // icon styles
+@import "003-patterns/modals";                // modal styles
+@import "003-patterns/sprite-png";
+@import "003-patterns/accordion";
+
+//-----------------------------------------------------------
+// PAGES
+//-----------------------------------------------------------
+
+@import "005-pages/common/section";                 // section
+@import "005-pages/home/_home";                     // home
+
+
+//-----------------------------------------------------------
+// THIRD PARTY STYLES
+//-----------------------------------------------------------
+
+//@import "006-third-party/_wp.scss";                 // wordpress-specific styles
+
+//-----------------------------------------------------------
+// SHAME
+//-----------------------------------------------------------
+
+@import "007-shame/shame";                    // styles that need to be refactored, or that are hacky because of browser compatibility etc.
+
+//-----------------------------------------------------------
+// GLOBAL ELEMENTS (HEADER & FOOTER, ETC)
+//-----------------------------------------------------------
+
+@import "004-globals/header";                      // header styles
+@import "004-globals/responsive";
+@import "004-globals/footer";
+
+
+
