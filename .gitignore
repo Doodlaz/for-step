@@ -1,0 +1,20 @@
+# IDE
+/.idea
+
+
+# Git
+/.git
+
+# Node
+/node_modules
+
+# Build
+/dist
+/css
+/js
+/fonts
+/img
+/*.html
+/package-lock.json
+
+sources/styles/003-patterns/_sprite.scss
